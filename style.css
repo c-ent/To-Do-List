@@ -1,0 +1,86 @@
+.header{
+    display:flex;
+}
+.user-details{
+    width:20%
+}
+.profile-pic{
+    width:20%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.greeting-text{
+    font-size: 50px;
+    margin: 0;
+}
+.date-time{
+    margin: 0;
+    width: 100%;
+}
+.search-bar-div{
+    margin: auto;
+    width: 60%;
+    height: 25px;
+    display: flex;
+}
+.search-bar{
+    width: 95%;
+    height: 30px;
+}
+.search-button{
+    border-color: black;
+    border-style: solid;
+    height: 35px;
+    width: 5%;
+}
+.tasks{
+    border-style: solid;
+}
+.checkbox{
+    width:30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.task-text{
+    width:100%;
+    height: 100%;
+    margin: 20px;
+}
+.task-box{
+    display: flex;
+}
+.date-checbox-div{
+    margin: 20px;
+    display: flex;
+}
+.add-div{
+    margin:10px;
+}
+
+.search-bar-div-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .search-bar-div{
+        display: none;
+    }
+    .user-details,.profile-pic{
+        width: 50%;
+    }
+    .search-bar-div-mobile{
+        margin: none;
+        display: flex;
+        width: 90%;
+    }
+    .search-button{
+     
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 10%;
+    }
+  }

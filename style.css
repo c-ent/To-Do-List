@@ -1,3 +1,8 @@
+
+h1,h2,h3{
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
 .header{
     display:flex;
 }
@@ -11,10 +16,14 @@ justify-content: center;
 align-items: center;
 }
 .greeting-text{
+    font-family: 'Open Sans';
+    font-weight: 700;
     font-size: 50px;
     margin: 0;
 }
 .date-time{
+    font-family: 'Open Sans';
+    font-weight: 500;
     margin: 0;
     width: 100%;
 }
@@ -29,14 +38,24 @@ align-items: center;
     height: 30px;
 }
 .search-button{
-    border-color: black;
-    border-style: solid;
+    background-color: brown;
+    border-style: none;
     height: 35px;
     width: 5%;
 }
 .tasks{
+    border-color: black;
+    background-color:rgb(12, 12, 12);
     border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
 }
+.ellipsis-button{
+    background-color: rgb(12, 12, 12);
+    border-style: none;
+      
+}
+
 .checkbox{
     width:30px;
     height: 30px;
@@ -44,12 +63,23 @@ align-items: center;
     align-items: center;
     text-align: center;
 }
+.task-text,.date-time-task{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color:white;
+}
+
+.date-time-task{
+    margin: 0;
+    width: 100%;
+}
 .task-text{
+    
     width:100%;
     height: 100%;
-    margin: 20px;
 }
 .task-box{
+    margin:20px;
     display: flex;
 }
 .date-checbox-div{
@@ -62,6 +92,14 @@ align-items: center;
 
 .search-bar-div-mobile{
     display: none;
+}
+.footer{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -78,8 +116,7 @@ align-items: center;
     }
     .search-button{
      
-        border-color: black;
-        border-style: solid;
+
         height: 35px;
         width: 10%;
     }

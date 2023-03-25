@@ -4,80 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <meta name="description" content="A ToDoList Website made by me">
-    <meta name="keywords" content="Elher Encarnacion,Elher Bincent P. Encarnacion,Elher Bincent,Elher,Software,Developer,Web Developer,Software Engineering">
-    <meta name="author" content="Elher Bincent P. Encarnacion">
-    <title>ToDo App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="user-details">
-            <h2 class="greeting-text">Hey, User</h2>
-            <p id="date-time" class="date-time">dd Month Year 00:00 am</p>
-     
 
-<script>
-const d = new Date().toLocaleString();
-document.getElementById("date-time").innerHTML = d;
-</script>
-        </div>
-        <div class="search-bar-div">
-            <input class="search-bar" placeholder="Search your List" type="text">
-            <button class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
-        <div class="profile-pic">
-            <i class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
-        </div>
+<div class="container">
+    <div class="todologodiv">
+        <i class="bi bi-sticky-fill"></i>
+        <h1 class="todotitle">To-Do</h1>
     </div>
-    <div class="search-bar-div-mobile">
-        <input class="search-bar" placeholder="Search your List" type="text">
-        <button class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-    </div>
-    <div>
-        <h3>Todays Task</h3>
 
-        <div class="tasks">
-            <div class="task-box">
-                <p class="task-text">This is your task</p>
-                <button class="ellipsis-button"><i class="fa fa-ellipsis-h fa-inverse fa-2x" aria-hidden="true"></i></button>
-            </div>
-            
-            <div class="date-checbox-div">
-                <p class="date-time-task">dd Month Year 00:00 am</p>
-                <input class="checkbox" type="checkbox">
-            </div>
-        </div>
+    <div class="tododiv">
+      <h1 class="todotasktexttitle">Tasks</h1>
 
-        <div class="tasks">
-            <div class="task-box">
-                <p class="task-text">This is your task</p>
-                <button class="ellipsis-button"><i class="fa fa-ellipsis-h fa-inverse fa-2x" aria-hidden="true"></i></button>
-            </div>
-            
-            <div class="date-checbox-div">
-                <p class="date-time-task">dd Month Year 00:00 am</p>
-                <input class="checkbox" type="checkbox">
-            </div>
-        </div>  
+      <div class="add">
+        <i class="plus">+</i>
+        <input class="addinput"type="text" placeholder="Add New Task">
+      </div>
 
-    </div>
-    <div align="center" class="add-div">
-        <button><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
+      <div>
+
+        <p><i class="bi bi-clock-history"></i>Unfinished tasks</p>
+
+        <ul id="myUL">
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+          </ul>
+      </div>
+
+
+      <div>
+        Finished tasks
+        
+        <ul id="myUL">
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+          </ul>
+      </div>
+
 
     </div>
 
-
-    <div align="center" class="footer">
-        2022
-
-    </div>
-   
-    
+</div>
 </body>
 </html>

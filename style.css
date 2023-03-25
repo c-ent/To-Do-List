@@ -1,123 +1,86 @@
+body{
+    margin: 0;
+}
 
-h1,h2,h3{
-    font-family: 'Open Sans';
-    font-weight: 800;
+::placeholder{
+    font-style: 'Hind';
+    font-weight: bold;
+    color: #353535;
 }
-.header{
-    display:flex;
-}
-.user-details{
-    width:20%
-}
-.profile-pic{
-    width:20%;
-    display: flex;
-justify-content: center;
-align-items: center;
-}
-.greeting-text{
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 50px;
-    margin: 0;
-}
-.date-time{
-    font-family: 'Open Sans';
-    font-weight: 500;
-    margin: 0;
+.container{
     width: 100%;
-}
-.search-bar-div{
-    margin: auto;
-    width: 60%;
-    height: 25px;
+    height: 100%;
     display: flex;
+    flex-direction: row;
+
 }
-.search-bar{
-    width: 95%;
-    height: 30px;
+
+.todologodiv{
+    width: 40%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-.search-button{
-    background-color: brown;
-    border-style: none;
-    height: 35px;
-    width: 5%;
+
+.bi-sticky-fill{
+    font-size: 120px;
+    color: #353535;
 }
-.tasks{
-    border-color: black;
-    background-color:rgb(12, 12, 12);
+
+
+
+.tododiv{
+    padding:2%;
+    width: 60%;
+}
+.add{
     border-style: solid;
     border-width: 1px;
-    margin-bottom: 20px;
-}
-.ellipsis-button{
-    background-color: rgb(12, 12, 12);
-    border-style: none;
-      
-}
-
-.checkbox{
-    width:30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.task-text,.date-time-task{
-    font-family: 'Open Sans';
-    font-weight: 500;
-    color:white;
-}
-
-.date-time-task{
-    margin: 0;
+    padding: 5px;
     width: 100%;
-}
-.task-text{
-    
-    width:100%;
-    height: 100%;
-}
-.task-box{
-    margin:20px;
+    border-radius: 8px;
+    border-color: #353535;
+
     display: flex;
 }
-.date-checbox-div{
-    margin: 20px;
+
+.addinput{
+    width: 100%;
+    border: none;
+}
+
+li{
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+    width: 100%;
     display: flex;
 }
-.add-div{
-    margin:10px;
+
+.plus{
+    font-size: 20px;
+    font-family: 'Hind';
+    font-weight: bold;
+    color: #353535;
+    margin-right: 10px;
 }
 
-.search-bar-div-mobile{
-    display: none;
-}
-.footer{
-    font-family: 'Open Sans';
-    font-weight: 500;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.todotitle{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #353535;
 }
 
-@media only screen and (max-width: 700px) {
-    .search-bar-div{
-        display: none;
-    }
-    .user-details,.profile-pic{
-        width: 50%;
-    }
-    .search-bar-div-mobile{
-   
-        display: flex;
-        width: 100%;
-    }
-    .search-button{
-     
+.todotasktexttitle{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #1C1C1C;
 
-        height: 35px;
-        width: 10%;
-    }
-  }
+}

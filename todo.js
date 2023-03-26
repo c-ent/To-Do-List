@@ -5,7 +5,13 @@ window.onload = function() {
   
  
 
+const add = document.getElementById('addbutton');
+const form1 = document.querySelector('form');
 
+  add.addEventListener("click", function() {
+  // Code to be executed when the button is clicked
+  form1.style.display = 'flex';
+});
 
   
 
@@ -52,11 +58,28 @@ form.addEventListener('submit', function(event) {
   // Clear the input element
   input.value = '';
 
+
+  document.querySelector('form').style.display = 'none'
   checkboxmove();
     }
   });
 
  
+
+
+
+
+
+
+
+  const today = new Date();
+  const options = { weekday: 'long', month: 'long', day: 'numeric' };
+  const date = today.toLocaleDateString('en-US', options);
+  document.getElementById("date").innerHTML = date;
+
+
+
+
 
 
 

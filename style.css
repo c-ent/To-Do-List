@@ -20,7 +20,7 @@ p{
 }
 
 .todologodiv{
-    width: 40%;
+    width: 20%;
     height: 100vh;
     position: fixed;
     background-color: #F5F5F5;
@@ -49,16 +49,28 @@ p{
 
 
 .tododiv{
-    margin:2% 2% 2% 42%;
-    width: 60%;
+    margin:2% 2% 2% 22%;
+    width: 80%;
     
+}
+
+.unfinisheddiv{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.uniandfinishdiv{
+    display:flex;
+    width: 100%;
 }
 
 .add{
     border-style: solid;
     border-width: 0.5px;
     padding: 12px;
-    width: 100;
+    width: 100%;
     border-radius: 8px;
     border-color: #909090;
 
@@ -75,6 +87,7 @@ p{
     background-color: #F9FAFC;
     padding: 2%;
     border-radius: 20px;
+    margin: 20px;
 }
 input[type="checkbox"] {
     -webkit-appearance: none; /* Remove default appearance */
@@ -115,6 +128,9 @@ li{
     border-color: #90909000;
     background-color: white;
     box-shadow: 2px 0px 4px rgba(219, 219, 219, 0.4);
+    font-family: 'Inter', sans-serif;;
+    font-weight: bolder;
+    color: #353535;
 
     padding: 12px;
     margin-top: 15px;
@@ -125,11 +141,10 @@ li{
 }
 
 .tasktxt{
-    font-family: 'Inter', sans-serif;;
-    font-weight: bolder;
+   
     flex: 1;
     text-align: left;
-    color: #353535;;
+    
 }
 .todotitle{
     font-size: 40px;
@@ -152,8 +167,25 @@ li{
 
 }
 
+a{
+    text-decoration: none;
+    color: #212121;
+}
+.footer{
+    margin-left:22%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
 
+    .add{
+        width: 100%;
+    }
     .todologodiv{
         display: none;
     }
@@ -163,5 +195,21 @@ li{
         width: 100%;
     }
 
+
+    .uniandfinishdiv{
+        flex-direction: column;
+    }
+
+    .unfinisheddiv , .completeddiv{
+        margin: 30px 0px 0px 0px;
+        width: inherit !important;
+    }
+
+
+    .footer{
+        margin: 0;
+        text-align: center;
+
+    }
 }
     
